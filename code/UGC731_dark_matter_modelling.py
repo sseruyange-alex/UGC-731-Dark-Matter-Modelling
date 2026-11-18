@@ -529,7 +529,7 @@ print("  -> the measured profile is used directly for V_gas.\n")
 # =====================================================================
 print("-" * 66); print("STEP 2 - WISE W1 stellar surface density"); print("-" * 66)
 r_wise_arcs = np.arange(2, 120, 3, dtype=float)   # annulus centres: 2, 5, ..., 119 arcsec
-WISE_FITS   = "0185p499_ac51-w1-int-3_ra17_6833359_dec49_602112_asec600_000.fits"
+WISE_FITS   = "WISE_W1_image.fits"
 WISE_PA     = PA_KIN % 180.0                  # kinematic major-axis PA (265.5 deg = 85.5 deg); the faint W1 light does not fix a PA by itself
 WISE_DR     = 3.0                                 # annulus width [arcsec]
 WISE_SKY_R  = 250.0                               # sky = median of the cutout beyond this radius [arcsec]
