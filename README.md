@@ -5,68 +5,69 @@
 
 ## Overview
 
-This repository presents an undergraduate astrophysics research project investigating the dark matter distribution of the dwarf irregular galaxy UGC 731 (DDO 9).
+This repository contains the computational implementation and research materials for an astrophysics study investigating the dark matter distribution in the dwarf irregular galaxy UGC 731 (DDO 9).
 
-The study combines optical H-alpha rotation curve data from the GHASP survey with HI 21-cm observations from the WHISP survey to construct a hybrid rotation curve and investigate the galaxy's mass distribution.
+The study combines optical H-alpha rotation curve measurements from the GHASP survey with HI 21-cm kinematic data from the WHISP survey to construct a hybrid rotation curve.
 
-The research applies baryonic decomposition and dark matter halo modelling to examine whether the galaxy's dark matter distribution is better described by a cored or cuspy density profile.
+The observed galactic dynamics are analysed through baryonic decomposition and dark matter halo modelling.
 
 ## Research Objectives
 
-- Construct a hybrid optical and HI rotation curve.
-- Determine the stellar and gas contributions to the observed rotation.
-- Estimate the dark matter contribution.
-- Fit the NFW and Burkert halo models.
-- Compare the models using chi-square, AIC and BIC statistics.
-- Investigate the core-cusp problem in UGC 731.
-
-## Observational Data
-
-- GHASP optical H-alpha rotation curve.
-- WHISP HI 21-cm observations.
-- WISE W1-band photometry.
+1. Construct a hybrid optical and HI 21-cm rotation curve.
+2. Determine the stellar and gas contributions to the gravitational potential.
+3. Model the dark matter halo using Burkert and NFW density profiles.
+4. Compare the halo models using chi-square, AIC and BIC.
+5. Investigate the sensitivity of the results to uncertainties in the baryonic components and observational data.
 
 ## Methodology
 
-1. Observational data acquisition and preparation.
-2. HI data cube analysis using BBarolo.
-3. Construction of the hybrid rotation curve.
-4. Stellar and gas surface density modelling.
-5. Baryonic decomposition.
-6. NFW and Burkert halo fitting.
-7. Statistical comparison and sensitivity analysis.
+- Optical rotation curve analysis.
+- HI 21-cm data processing and surface density extraction.
+- WISE W1 stellar photometry.
+- Baryonic mass decomposition.
+- Dark matter halo parameter estimation.
+- Statistical model comparison and sensitivity analysis.
 
-## Key Findings
-
-The analysis produces a 29-point hybrid rotation curve extending from 0.07 to 7.79 kpc.
-
-The full radial range moderately to strongly favours the NFW model according to AIC/BIC comparison, while the inner optical data favour the Burkert model.
-
-The results do not conclusively distinguish between a cored and cuspy dark matter halo.
-
-## Tools and Technologies
+## Computational Tools
 
 - Python
 - NumPy
 - SciPy
 - Matplotlib
-- BBarolo
-- CARTA
-- LaTeX
+- Astropy
+- Jupyter / scientific Python environment
+
+## Main Models
+
+- Burkert dark matter halo (cored profile).
+- Navarro-Frenk-White (NFW) dark matter halo (cuspy profile).
+- Generalised NFW halo.
+
+## Results
+
+The analysis compares the ability of cored and cuspy halo models to reproduce the observed rotation curve of UGC 731.
+
+The findings indicate that the available observational data do not decisively distinguish between the two halo structures.
 
 ## Repository Contents
 
-Research documentation, observational datasets, computational analysis,
-scientific visualisations and model-fitting results.
+- `thesis/`: Research thesis and documentation.
+- `code/`: Python modelling pipeline.
+- `data/`: Observational and processed datasets.
+- `results/`: Model outputs, figures and sensitivity analysis.
+- `references/`: Scientific references and data provenance.
+
+## Data Sources
+
+- GHASP survey: Optical H-alpha rotation curve.
+- WHISP survey: HI 21-cm observations.
+- NASA/IPAC Infrared Science Archive: WISE W1 imaging.
 
 ## Author
 
-Sseruyange Alex
-
-BSc Physics
-Department of Physics
-Makerere University
+Research conducted at Makerere University,
+Department of Physics.
 
 ## Project Status
 
-Research completed – June 2026.
+Completed undergraduate research project.
